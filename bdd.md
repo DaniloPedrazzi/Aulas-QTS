@@ -153,3 +153,47 @@
 ## Contexto:
 >**Dado** que o Fulano já possui uma conta no sistema
 ### Cenário: Alteração dos dados válidas
+>**E** ele acessa a página de gerenciamento de perfil
+>
+>**E** seleciona o dado que deseja alterar
+>
+>**E** altera seus dados corretamente 
+>
+>**Quando** aciona o botão “salvar”
+>
+>**Então** os dados são substituídos e salvos no sistema
+>
+### Cenário: Alteração dos dados inválidos – E-mail e Telefone
+>**E** ele acessa a página de gerenciamento de perfil
+>
+>**E** seleciona o dado que deseja alterar
+>
+>**E** altera seus dados incorretamente 
+>
+>**Quando** aciona o botão “salvar”
+>
+>**Então** o sistema exibe um erro informando que o E-mail/Telefone está errado
+>
+### Cenário: Alteração da senha corretamente
+>**E** ele acessa a página de gerenciamento de perfil
+>
+>**Quando** aciona o botão “alterar senha’
+>
+>**E** altera a senha corretamente
+>
+>**Quando** aciona o botão “salvar”
+>
+>**Então** os dados são substituídos e salvos no sistema
+>
+### Cenário: Alteração da senha incorretamente
+>**E** ele acessa a página de gerenciamento de perfil
+>
+>**Quando** aciona o botão “alterar senha’
+>
+>**E** altera a senha incorretamente
+>
+>**Quando** aciona o botão “salvar”
+>
+>**Então** o sistema exibe um erro informando que a nova senha é inválida 
+>
+
